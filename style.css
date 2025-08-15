@@ -1,11 +1,85 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    background-color: hsl(218, 23%, 16%);
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(218, 23%, 16%);
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: hsl(217, 19%, 24%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 500px;
+  width: 35%;
+  height: 40vh;
+  border-radius: 20px;
+  padding: 2rem;
+
+  position: relative;
+}
+.advice-id {
+  color: hsl(150, 100%, 66%);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  gap: 10px;
+}
+.advice {
+  /* background-color: crimson; */
+  height: 84%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advice p {
+  color: white;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.button {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  background-color: hsl(150, 100%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+.button:hover {
+  box-shadow: 0 0 20px 4px hsl(150, 100%, 66%);
+}
+
+/* @media (max-width: 375px) {
+  .container {
+    background-color: hsl(219, 100%, 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 2rem;
+
+    position: relative;
+  }
+} */

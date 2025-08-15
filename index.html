@@ -11,7 +11,13 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Advice generator app</title>
     <style>
@@ -25,12 +31,26 @@
     </style>
   </head>
   <body>
-    
-    <div class="attribution">
+    <div class="container">
+      <div class="advice-id"><h5 id="advice-id">Adivce</h5></div>
+      <div class="advice">
+        <p id="advice">"Click the dice for generating a new advice!"</p>
+      </div>
+      <div class="diveder">
+        <img src="images/pattern-divider-desktop.svg" alt="" />
+      </div>
+      <div class="button" id="btn" role="button" tabindex="0">
+        <img src="images/icon-dice.svg" alt="" />
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/Nitesh-Lohar">Nitesh Lohar</a>.
-    </div>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
