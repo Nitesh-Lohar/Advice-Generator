@@ -5,7 +5,7 @@ let advice=document.querySelector("#advice")
 
 btn.addEventListener("click", async () => {
   let adviceObj = await genAdvice();
-  adviceId.textContent="advice #"+adviceObj.slip.id
+  adviceId.textContent="Advice #"+adviceObj.slip.id
   advice.textContent=`"${adviceObj.slip.advice}"`;
   console.log(advice)
 });

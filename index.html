@@ -20,15 +20,7 @@
     />
 
     <title>Frontend Mentor | Advice generator app</title>
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <div class="container">
@@ -37,19 +29,25 @@
         <p id="advice">"Click the dice for generating a new advice!"</p>
       </div>
       <div class="diveder">
-        <img src="images/pattern-divider-desktop.svg" alt="" />
+        <picture>
+          <source
+            srcset="images/pattern-divider-mobile.svg"
+            media="(max-width: 480px)"
+          />
+          <img src="images/pattern-divider-desktop.svg" alt="divider" />
+        </picture>
       </div>
       <div class="button" id="btn" role="button" tabindex="0">
         <img src="images/icon-dice.svg" alt="" />
       </div>
     </div>
 
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/Nitesh-Lohar">Nitesh Lohar</a>.
-    </div> -->
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="app.js"></script>
   </body>

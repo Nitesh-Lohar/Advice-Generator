@@ -10,47 +10,50 @@ body {
   height: 100%;
   width: 100%;
   background-color: hsl(218, 23%, 16%);
-}
-body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
+  position: relative;
 }
+
+/* Container */
 .container {
   background-color: hsl(217, 19%, 24%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 500px;
   width: 35%;
-  height: 40vh;
+  min-width: 350px;
+  max-width: 500px;
+  height: auto;
   border-radius: 20px;
   padding: 2rem;
-
   position: relative;
 }
+
+/* Advice ID */
 .advice-id {
   color: hsl(150, 100%, 66%);
-  font-size: 1.5rem;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  gap: 10px;
+  margin-bottom: 1rem;
 }
+
+/* Advice Text */
 .advice {
-  /* background-color: crimson; */
-  height: 84%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.advice p {
-  color: white;
+  color: hsl(193, 38%, 86%);
   font-weight: 800;
-  font-size: 1.3rem;
-  letter-spacing: 0.1rem;
+  font-size: 28px; /* from style guide */
+  letter-spacing: 0.02rem;
   text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.4;
 }
+
+/* Dice Button */
 .button {
   position: absolute;
   left: 50%;
@@ -62,24 +65,71 @@ body {
   align-items: center;
   padding: 15px;
   border-radius: 50%;
-
   cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
 }
+
 .button:hover {
   box-shadow: 0 0 20px 4px hsl(150, 100%, 66%);
 }
+.attribution {
+  font-size: 11px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  position: absolute;
+  bottom: 10px;   
+  width: 100%;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
-/* @media (max-width: 375px) {
+/* -------------------- */
+/*       Responsive     */
+/* -------------------- */
+
+/* Mobile (375px) */
+@media (max-width: 480px) {
   .container {
-    background-color: hsl(219, 100%, 50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    height: 300px;
-    border-radius: 20px;
-    padding: 2rem;
-
-    position: relative;
+    width: 90%;
+    min-width: unset;
+    padding: 1.5rem;
   }
-} */
+
+  .advice {
+    font-size: 22px;
+  }
+
+  .advice-id {
+    font-size: 12px;
+  }
+
+  .button {
+    padding: 12px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .container {
+    width: 70%;
+    padding: 2rem;
+  }
+
+  .advice {
+    font-size: 24px;
+  }
+}
+
+/* Large Desktops (1440px and above) */
+@media (min-width: 1440px) {
+  .container {
+    width: 30%;
+    max-width: 600px;
+  }
+
+  .advice {
+    font-size: 30px;
+  }
+}
