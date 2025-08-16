@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add your solution URL here](https://www.frontendmentor.io/solutions/)
-- Live Site URL: [Add your live site URL here](https://nitesh-lohar.github.io/Advice-Generator/)
+- Solution URL: [URL](https://www.frontendmentor.io/solutions/)
+- Live Site URL: [URL](https://nitesh-lohar.github.io/Advice-Generator/)
 
 ---
 
